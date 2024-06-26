@@ -1,69 +1,39 @@
-import generics.Box;
-import generics.GenericMethodTest;
-import generics.MaximumTest;
-import java_files.CreateFile;
-import java_files.GetFileInfo;
-import java_files.ReadFile;
-import java_files.WriteToFile;
-import lambda.LambdaNumber;
-import serialization.Employee;
-import threads.RunnableDemo;
+import abstrct.Rectangle;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Scanner;
+class Person{
+
+    String name;
+    int age ;
+
+
+}
 
 public class Main {
     public static void main(String[] args) {
 
-//        ArrayList<String> list = new ArrayList<>();
-//        list.add("Ravi");
-//        list.add("Sk");
-//        list.add("KS");
-//        list.add("Lord");
-//        list.add("Ravi");
-//
-//        Iterator itr = list.iterator();
-//
-//        while(itr.hasNext()){
-//
-//            System.out.println(itr.next());
-//        }
-
-Scanner scanner = new Scanner(System.in);
+      Person person1 = new Person();
 
 
-        ArrayList<String> colors = new ArrayList<>();
-        colors.add("Red");
-        colors.add("Green");
-        colors.add("Orange");
-        colors.add("White");
-        colors.add("Black");
-        colors.add(0, "Pink");
+      person1.name = "Elizabeth";
+      person1.age = 23;
 
 
 
+        System.out.println(person1.name +" "+ person1.age);
 
-int count = 0;
-        Iterator iterator = colors.iterator();
+        Person person2 = new Person();
 
-        for(int i = 0; i < colors.size(); i++)
-        {
-            String name = scanner.nextLine();
+        person2.name ="Motshabi";
+        person2.age = 12;
 
-            if(colors.contains(name)){
+        System.out.println(person2.name + " "+ person2.age);
 
-                count ++;
-            }
-
-
-        }
-
-System.out.println("The color was found : " + count);
 
 
 
     }
 }
+
